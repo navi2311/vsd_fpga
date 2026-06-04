@@ -12,4 +12,5 @@ then it performs
 - analysis
 to map circuit onto the fpga
 ### commands to runs
+> vpr arch_file .blif_file ---min two inputs required to start vpr framework
 
