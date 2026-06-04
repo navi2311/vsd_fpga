@@ -11,4 +11,5 @@ then it performs
 - routing
 - analysis
 to map circuit onto the fpga
-###
+### commands to runs
+
