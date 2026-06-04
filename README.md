@@ -12,4 +12,4 @@ In this workshop we run two designs`(counter,riscv_core)` in following tools
 - SOFA(which uses open fpga and maps the technology to sky130 pdk)
   - how to run SOFA flow
 
-in these tools analysed the power,timing,ultilization,post-implementation netlist verfication for both designs
+in these tools`(Vivado,VTR,SOFA)` analysed the power,timing,ultilization,post-implementation netlist verfication for both designs
