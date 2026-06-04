@@ -20,8 +20,8 @@ to map circuit onto the fpga
 `...`
 - timing analysis
 `....`
-power_analysis
+- power_analysis
 `...`
-post_implenmation
+- post_implenmation
 `...`
 
