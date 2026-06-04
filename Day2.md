@@ -4,5 +4,6 @@
 ### inputs
 - FPGA architecture file (.xml)
 - technology mapped user defined circuit
-- then it performs packing, placement and routing  to map circuit onto the fpga
+## 
+then it performs packing, placement and routing  to map circuit onto the fpga
 ###
