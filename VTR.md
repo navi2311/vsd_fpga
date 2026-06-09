@@ -5,3 +5,10 @@ flags_used ----
 ----route_chan_width 100 routhing width flag
 --sdc_file counter.sdc --- sdc file passing
 -ending_stage odin --- end at odin stage
+
+
+##################################
+output 
+<img width="2497" height="605" alt="image" src="https://github.com/user-attachments/assets/89edf571-14c8-4cbb-88cd-6697c817aa30" />
+
+
