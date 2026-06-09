@@ -15,3 +15,8 @@ output
 ```$VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py ./results/counter.odin.blif $VTR_ROOT/vtr_flow/arch/timing/EArch.xml -temp_dir ./results/abc --route_chan_width 100 --sdc_file -starting_stage abc -ending_stage abc```
 
 ****<img width="2535" height="805" alt="image" src="https://github.com/user-attachments/assets/bd1d4786-0b45-4153-9c5e-996dec4c0806" />
+
+
+###VPR flow using VTR
+```$VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py ./results/abc/counter.odin.abc.blif  $VTR_ROOT/vtr_flow/arch/timing/EArch.xml -temp_dir ./results/vpr --route_chan_width 100 --sdc_file counter.sdc -starting_stage vpr -ending_stage vpr --timing_report_detail detailed --timing_report_npaths 10```
+
