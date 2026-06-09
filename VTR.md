@@ -22,7 +22,7 @@ $VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
 | `-ending_stage odin` | Stop after ODIN II synthesis (produces `.odin.blif`) |
 
 **Output:**
-![ODIN stage output](<img width="2497" height="605" alt="image" src="https://github.com/user-attachments/assets/89edf571-14c8-4cbb-88cd-6697c817aa30" />)
+![ODIN stage output]("https://github.com/user-attachments/assets/89edf571-14c8-4cbb-88cd-6697c817aa30")
 
 ---
 
