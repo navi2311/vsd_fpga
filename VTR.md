@@ -26,7 +26,17 @@ $VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
 
 ---
 
+### Stage 2 — ABC (Logic Optimization → Mapped BLIF)
 
+```bash
+$VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
+  ./results/counter.odin.blif \
+  $VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
+  -temp_dir ./results/abc \
+  --route_chan_width 100 \
+  -starting_stage abc \
+  -ending_stage abc
+```
 ##################################
 output 
 <img width="2497" height="605" alt="image" src="https://github.com/user-attachments/assets/89edf571-14c8-4cbb-88cd-6697c817aa30" />
