@@ -2,13 +2,29 @@
 
 ### Stage 1 — ODIN II (RTL → BLIF)
 
-```$VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py  counter.v $VTR_ROOT/vtr_flow/arch/timing/EArch.xml -temp_dir ./results --route_chan_width 100 --sdc_file counter.sdc  -ending_stage odin```
-inputs ---- .xml,.v
-flags_used ---- 
--temp_dir to set output log files
-----route_chan_width 100 routhing width flag
---sdc_file counter.sdc --- sdc file passing
--ending_stage odin --- end at odin stage
+```bash
+$VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
+  counter.v \
+  $VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
+  -temp_dir ./results \
+  --route_chan_width 100 \
+  --sdc_file counter.sdc \
+  -ending_stage odin
+```
+
+| Flag | Purpose |
+|------|---------|
+| `counter.v` | RTL source |
+| `EArch.xml` | Target FPGA architecture |
+| `-temp_dir ./results` | Output directory for logs and intermediate files |
+| `--route_chan_width 100` | Fixed routing channel width |
+| `--sdc_file counter.sdc` | Timing constraints |
+| `-ending_stage odin` | Stop after ODIN II synthesis (produces `.odin.blif`) |
+
+**Output:**
+![ODIN stage output](https://github.com/user-attachments/assets/89edf571-14c8-4cbb-88cd-6697c817aa30)
+
+---
 
 
 ##################################
