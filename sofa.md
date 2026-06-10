@@ -48,6 +48,10 @@ cat FPGA1212_QLSOFA_HD_task/latest/vpr_arch/up_counter/MIN_ROUTE_CHAN_WIDTH/repo
 <img width="595" height="290" alt="image" src="https://github.com/user-attachments/assets/4ad30cba-dddc-4fab-b272-b6a354c61b5a" />
 
 
+<img width="689" height="341" alt="image" src="https://github.com/user-attachments/assets/dffe65c0-f371-451c-934e-5086c7766f6f" />
+
+
+
 
 
 
