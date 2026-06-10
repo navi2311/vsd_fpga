@@ -4,8 +4,8 @@
 ### step 1 copy design to benchmark folder
 
 ```
-cp counter.v  FPGA1212_QLSOFA_HD_task/BENCHMARK/navi/
-cp counter.sdc FPGA1212_QLSOFA_HD_task/BENCHMARK/navi/
+cp counter.v  /home/naveenbhuk/SOFA/FPGA1212_QLSOFA_HD_PNR/FPGA1212_QLSOFA_HD_task/BENCHMARK/navi/
+cp counter.sdc /home/naveenbhuk/SOFA/FPGA1212_QLSOFA_HD_PNR/FPGA1212_QLSOFA_HD_task/BENCHMARK/navi/
 ```
 ```
 cd /home/naveenbhuk/SOFA/FPGA1212_QLSOFA_HD_PNR```
