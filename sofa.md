@@ -34,5 +34,9 @@ vpr ${VPR_ARCH_FILE} ${VPR_TESTBENCH_BLIF} \
 cd /home/naveenbhuk/SOFA/FPGA1212_QLSOFA_HD_PNR
 make runOpenFPGA
 ```
+### step 4 results
+```
+cat FPGA1212_QLSOFA_HD_task/latest/task_result.csv
+```
 
 
