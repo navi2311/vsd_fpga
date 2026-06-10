@@ -1,5 +1,5 @@
 
-## SOFA Flow: 4-bit Up Counter 
+## SOFA Flow:using  4-bit Up Counter 
 ### Target: QLSOFA HD eFPGA IP
 ### step 1 copy design to benchmark folder
 
