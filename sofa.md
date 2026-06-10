@@ -45,6 +45,9 @@ Timing report
 cat FPGA1212_QLSOFA_HD_task/latest/vpr_arch/up_counter/MIN_ROUTE_CHAN_WIDTH/report_timing.setup.rpt
 
 ```
+<img width="595" height="290" alt="image" src="https://github.com/user-attachments/assets/4ad30cba-dddc-4fab-b272-b6a354c61b5a" />
+
+
 
 
 
