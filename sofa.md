@@ -7,9 +7,11 @@
 cp counter.v  /home/naveenbhuk/SOFA/FPGA1212_QLSOFA_HD_PNR/FPGA1212_QLSOFA_HD_task/BENCHMARK/navi/
 cp counter.sdc /home/naveenbhuk/SOFA/FPGA1212_QLSOFA_HD_PNR/FPGA1212_QLSOFA_HD_task/BENCHMARK/navi/
 ```
+### step 2 - Edit `task_simulation.config`
+
 ```
-cd /home/naveenbhuk/SOFA/FPGA1212_QLSOFA_HD_PNR```
-```vim FPGA1212_QLSOFA_HD_task/config/task_simulation.conf ```
+ vim /home/naveenbhuk/SOFA/FPGA1212_QLSOFA_HD_PNR/FPGA1212_QLSOFA_HD_task/config/task_simulation.conf
+```
 changed the counter path and top to up counter
 ```vim FPGA1212_QLSOFA_HD_task/generate_testbench.openfpga```
 make runOpenFPGA  from FPGA1212_qlsofa_hd_pnr
