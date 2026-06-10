@@ -38,5 +38,7 @@ make runOpenFPGA
 ```
 cat FPGA1212_QLSOFA_HD_task/latest/task_result.csv
 ```
+<img width="677" height="56" alt="image" src="https://github.com/user-attachments/assets/0c315627-1fc2-4261-8c88-f076c579eb00" />
+
 
 
