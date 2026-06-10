@@ -40,6 +40,13 @@ cat FPGA1212_QLSOFA_HD_task/latest/task_result.csv
 ```
 <img width="677" height="56" alt="image" src="https://github.com/user-attachments/assets/0c315627-1fc2-4261-8c88-f076c579eb00" />
 
+Timing report
+```
+cat FPGA1212_QLSOFA_HD_task/latest/vpr_arch/up_counter/MIN_ROUTE_CHAN_WIDTH/report_timing.setup.rpt
+
+```
+
+
 
 
 
