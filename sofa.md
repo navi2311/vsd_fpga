@@ -18,9 +18,21 @@ few imp set parameter  :
 2. BENCHMARK     --- *.v file
 3. SYNTHESIS_PARAM --- top module
 4. task_config
-   
-changed the counter path and top to up counter
+### step 3 Edit 'generate_testbench.openfpga'
 ```vim FPGA1212_QLSOFA_HD_task/generate_testbench.openfpga```
-make runOpenFPGA  from FPGA1212_qlsofa_hd_pnr
+Add an option to the vpr command
+```
+vpr ${VPR_ARCH_FILE} ${VPR_TESTBENCH_BLIF} \
+    --clock_modeling ideal \
+    --device ${OPENFPGA_VPR_DEVICE_LAYOUT} \
+    --route_chan_width ${OPENFPGA_VPR_ROUTE_CHAN_WIDTH} \
+    --absorb_buffer_luts off \
+    --sdc_file /home/naveenbhuk/SOFA/BENCHMARK/navi/counter.sdc
+```
+### step 4 -RUN
+```
+cd /home/naveenbhuk/SOFA/FPGA1212_QLSOFA_HD_PNR
+make runOpenFPGA
+```
 
 
