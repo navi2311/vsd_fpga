@@ -1,6 +1,6 @@
-VTR flow usage incremental 
-## VTR Flow: 4-bit Counter
 
+## VTR Flow: 
+VTR flow usage incremental using a counter example
 ### Stage 1 — ODIN II (RTL → BLIF)
 
 ```bash
