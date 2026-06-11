@@ -15,13 +15,11 @@ to map circuit onto the fpga
 > `vpr arch_file .blif_file` command to run vpr ---min two inputs required
 
 - to run without gui
-`...`
+``
 - to run with gui with increment 1
-`...`
+  ``
 - timing analysis
-`....`
-- power_analysis
-`...`
+  `'
 - post_implenmation
-`...`
+  ``
 
