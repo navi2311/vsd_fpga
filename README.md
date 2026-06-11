@@ -30,7 +30,7 @@ In these tools (Vivado, VTR, SOFA with open FPGA flow), we analysed  the power, 
 
  [VTR_counter](counter_vtr.md) | 
  [vtr_rvmyth](rvmyth_vtr.md)
- [sofa_counter](sofs.md)
+ [sofa_counter](sofa.md)
  [vivado_counter](vivado_counter.md)
  [vivado_rvmyth](vivado_rvmyth.md)
  
