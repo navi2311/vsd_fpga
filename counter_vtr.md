@@ -32,5 +32,8 @@ grep -A 15 "Circuit Statistics" temp/vpr.out
 ## hold
 <img width="410" height="301" alt="image" src="https://github.com/user-attachments/assets/779f58f5-1732-4090-801b-1a6172bee614" />
 
+## setup
+<img width="375" height="371" alt="image" src="https://github.com/user-attachments/assets/dc224b5a-32b5-452d-b1a8-c64bd7ec274f" />
+
 
 
