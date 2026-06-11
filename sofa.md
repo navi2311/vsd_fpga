@@ -1,13 +1,14 @@
 
-## SOFA Flow:using  4-bit Up Counter 
-### Target: QLSOFA HD eFPGA IP
-### step 1 copy design to benchmark folder
+## SOFA Flow
+used counter example to understand the flow
+> Target_FPGA_IP: QLSOFA HD eFPGA IP
+### step 1: copy design to benchmark folder
 
 ```
 cp counter.v  /home/naveenbhuk/SOFA/FPGA1212_QLSOFA_HD_PNR/FPGA1212_QLSOFA_HD_task/BENCHMARK/navi/
 cp counter.sdc /home/naveenbhuk/SOFA/FPGA1212_QLSOFA_HD_PNR/FPGA1212_QLSOFA_HD_task/BENCHMARK/navi/
 ```
-### step 2 - Edit `task_simulation.config`
+### step 2: Edit `task_simulation.config`
 
 
 ```
@@ -49,6 +50,13 @@ cat FPGA1212_QLSOFA_HD_task/latest/vpr_arch/up_counter/MIN_ROUTE_CHAN_WIDTH/repo
 
 
 <img width="689" height="341" alt="image" src="https://github.com/user-attachments/assets/dffe65c0-f371-451c-934e-5086c7766f6f" />
+
+
+>note :
+>
+> 1. For power analysis, add power in the architecture, or it will not run
+>
+> 2. (or) simple use .ace as input to VTR flow to get power 
 
 
 
