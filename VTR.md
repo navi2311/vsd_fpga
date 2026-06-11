@@ -72,5 +72,16 @@ cat results/vpr/report_timing.setup.rpt
 # Utilization
 cat results/vpr/packing_pin_util.rpt
 
+# power
+We have to ace the engine
+```
+$VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
+    $VTR_ROOT/doc/src/quickstart/counter.v \
+    $VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
+    -power -cmos_tech  /home/kunalg123/Desktop/openFPGA/openfpga_flow/tech/PTM_45nm/45nm.xml  \
+    -temp_dir . \
+    --route_chan_width 100
+```
+
 
 
