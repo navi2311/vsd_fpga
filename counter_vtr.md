@@ -1,10 +1,10 @@
-# post simuation
+# post simulation
 <img width="599" height="456" alt="image" src="https://github.com/user-attachments/assets/e740bed2-0fc6-472d-b2f8-52b5d2521b6b" />
 
 
 
 
-power
+# power
 ```
 
 $VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
