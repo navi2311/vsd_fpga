@@ -1,16 +1,9 @@
 till post simuation
 ```
-$VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
-  counter.v \
-  $VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
-  -temp_dir ./results \
-  --route_chan_width 100 \
-  --sdc_file counter.sdc \
-  
-  --gen_post_synthesis_netlist on
-
+$VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py counter.v  $VTR_ROOT/vtr_flow/arch/timing/EArch.xml --route_chan_width 100 -sdc_file /home/navi/FPGA/vtr_designs/counter/counter.sdc --gen_post_synthesis_netlist on
 ```
-
+- to see arch log
+grep -i "arch\|EArch" temp/vpr.out
 power
 ```
 
