@@ -19,6 +19,7 @@ few imp set parameter  :
 2. BENCHMARK     --- *.v file
 3. SYNTHESIS_PARAM --- top module
 4. task_config
+5. power and its associated config
 ### step 3 Edit `generate_testbench.openfpga`
 ```vim FPGA1212_QLSOFA_HD_task/generate_testbench.openfpga```
 Add an option to the vpr command
