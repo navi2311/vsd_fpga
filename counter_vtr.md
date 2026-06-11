@@ -27,5 +27,10 @@ grep -A 15 "Circuit Statistics" temp/vpr.out
 
 <img width="668" height="296" alt="image" src="https://github.com/user-attachments/assets/24779c8c-ec5e-4756-960f-62a6c2f5e365" />
 
+# timing
+
+## hold
+<img width="410" height="301" alt="image" src="https://github.com/user-attachments/assets/779f58f5-1732-4090-801b-1a6172bee614" />
+
 
 
