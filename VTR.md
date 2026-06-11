@@ -44,16 +44,7 @@ $VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py results/stage1/counter.parmys.blif   
 ### Stage 3 — VPR (Pack → Place → Route → STA)
 
 ```bash
-$VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
-  ./results/abc/counter.odin.abc.blif \
-  $VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
-  -temp_dir ./results/vpr \
-  --route_chan_width 100 \
-  --sdc_file counter.sdc \
-  -starting_stage vpr \
-  -ending_stage vpr \
-  --timing_report_detail detailed \
-  --timing_report_npaths 10
+$VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py results/stage2/counter.parmys.abc.blif   $VTR_ROOT/vtr_flow/arch/timing/EArch.xml   --route_chan_width 100   --sdc_file /home/navi/FPGA/vtr_designs/counter/counter.sdc   -temp_dir /home/navi/FPGA/vtr_designs/counter/results/stage3   -start vpr   -end vpr   --gen_post_synthesis_netlist on
 ```
 
 | Flag | Purpose |
@@ -61,6 +52,8 @@ $VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
 | `--timing_report_detail detailed` |  |
 | `--timing_report_npaths 10` | Report top 10 critical paths |
 
+**output**
+<img width="644" height="100" alt="image" src="https://github.com/user-attachments/assets/ca0e83be-e1e9-40f1-8d03-176f10533c0f" />
 
 # Critical path and Fmax
 cat results/vpr/report_timing.setup.rpt
@@ -69,28 +62,22 @@ cat results/vpr/report_timing.setup.rpt
 cat results/vpr/packing_pin_util.rpt
 
 
-# post netlist
-```
-$VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
-  counter.v \
-  $VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
-  -temp_dir ./results \
-  --route_chan_width 100 \
-  --sdc_file counter.sdc \
-  
-  --gen_post_synthesis_netlist on
+
   ```
 
 # power
 We have to ace the engine
 ```
-$VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
-    counter.v \
-    $VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
-    -power -cmos_tech  /home/kunalg123/Desktop/openFPGA/openfpga_flow/tech/PTM_45nm/45nm.xml  \
-    ./results/vpr \
-    --route_chan_width 100
+$VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py counter.v \
+  $VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
+  --route_chan_width 100 \
+  -sdc_file /home/navi/FPGA/vtr_designs/counter/counter.sdc \
+  -temp_dir /home/navi/FPGA/vtr_designs/counter/results/power \
+  -power \
+  -cmos_tech $VTR_ROOT/vtr_flow/tech/PTM_45nm/45nm.xml
 ```
+<img width="644" height="211" alt="image" src="https://github.com/user-attachments/assets/2e5d9acc-da23-4d02-81df-2e96f8676663" />
+
 
 
 
