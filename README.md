@@ -22,6 +22,6 @@ In this workshop we run two designs`(counter,riscv_core)` in following tools
     - [VPR flow](VPR.md)
     - [VTR flow](VTR.md)
 - SOFA(which uses open fpga and maps the technology to sky130 pdk)
-  - How to run SOFA flow
+  - [SOFA using openFPGA](sofa.md)    
 
 In these tools (Vivado, VTR, SOFA with open FPGA flow), we analysed  the power, timing, utilization, and post-implementation netlist verification for both designs
