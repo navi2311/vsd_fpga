@@ -71,6 +71,8 @@ cat results/vpr/report_timing.setup.rpt
 
 # Utilization
 cat results/vpr/packing_pin_util.rpt
+
+```
 #post netlist
 ```
 $VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
@@ -81,7 +83,7 @@ $VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
   --sdc_file counter.sdc \
   
   --gen_post_synthesis_netlist on
-```
+  ```
 
 # power
 We have to ace the engine
