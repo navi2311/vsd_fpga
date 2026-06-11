@@ -29,4 +29,4 @@ In these tools (Vivado, VTR, SOFA with open FPGA flow), we analysed  the power, 
 
 | Design | Vivado | VTR | SOFA (QLSOFA HD)|
 | -------- | -------- | -------- | --------|
-| counter | | | |
+| counter | |[VTR_counter](counter_vtr.md) | |
