@@ -72,8 +72,8 @@ cat results/vpr/report_timing.setup.rpt
 # Utilization
 cat results/vpr/packing_pin_util.rpt
 
-```
-#post netlist
+
+# post netlist
 ```
 $VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
   counter.v \
