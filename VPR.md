@@ -4,6 +4,14 @@
 ### inputs
 - FPGA architecture file (.xml)
 - technology-mapped user-defined circuit
+  > `vpr arch_file .blif_file` command to run vpr ---min two inputs required
+
+    ```
+    $VTR_ROOT/vpr/vpr \
+    $VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
+    $VTR_ROOT/vtr_flow/benchmarks/blif/tseng.blif \
+    --route_chan_width 100
+    ```
 ## VPR STAGES
 | stage | input | output | command |
 |------|---------|----------|----|
@@ -14,16 +22,8 @@
 
 > note: with the VPR command, pass input and command option if we want to run incremental
 
-### commands to run 
-> `vpr arch_file .blif_file` command to run vpr ---min two inputs required
 
-- to run without a GUI
-```
-$VTR_ROOT/vpr/vpr \
-    $VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
-    $VTR_ROOT/vtr_flow/benchmarks/blif/tseng.blif \
-    --route_chan_width 100
-```
+
 - with gui
 ```
 $VTR_ROOT/vpr/vpr \
