@@ -10,6 +10,7 @@
 | `pack` | *.v | *.net | --pack |
 | `place` | *.net | *.place | --place |
 | `route` | *.place | *.route | -- route |
+| 'analysis| *.route| timing.rpt| --analysis|
 
 > note: with the VPR command, pass input and command option if we want to run incremental
 
