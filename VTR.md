@@ -1,3 +1,4 @@
+VTR flow usage incremental 
 ## VTR Flow: 4-bit Counter
 
 ### Stage 1 — ODIN II (RTL → BLIF)
