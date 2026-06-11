@@ -5,9 +5,9 @@
 - FPGA architecture file (.xml)
 - technology-mapped user-defined circuit
 ## VPR STAGES
-| stage | input & output| 
-|------|---------|
-| `pack` | RTL source |
+| stage | input | output | command|
+|------|---------|----------|
+| `pack` | *.v|*.net||
 | `place` | Target FPGA architecture |
 | `route` | Output directory for logs and intermediate files |
 | `analysis` | Fixed routing channel width |
