@@ -30,6 +30,13 @@ vpr ${VPR_ARCH_FILE} ${VPR_TESTBENCH_BLIF} \
     --absorb_buffer_luts off \
     --sdc_file /home/naveenbhuk/SOFA/BENCHMARK/navi/counter.sdc
 ```
+- to add power 
+```
+--power \
+--activity_file {activity_file} \
+--$VTR_ROOT/vtr_flow/tech/PTM_45nm/45nm.xml
+```
+
 ### step 4 -RUN
 ```
 cd /home/naveenbhuk/SOFA/FPGA1212_QLSOFA_HD_PNR
