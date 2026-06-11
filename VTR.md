@@ -2,24 +2,15 @@
 ## VTR Flow: 
 >command to run all stages
 ```
-$VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
-  counter.v \
-  $VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
-  -temp_dir ./results \
-  --route_chan_width 100 \
-  --sdc_file counter.sdc \
+$VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py counter.v   $VTR_ROOT/vtr_flow/arch/timing/EArch.xml   --route_chan_width 100   --sdc_file /home/navi/FPGA/vtr_designs/counter/counter.sdc   -temp_dir /home/navi/FPGA/vtr_designs/counter/results   --gen_post_synthesis_netlist on
+
 ```
 VTR flow usage incremental using a counter example
-### Stage 1 — ODIN II (RTL → BLIF)
+### Stage 1 — ODIN II/yosys/parmys (RTL → BLIF)
 
 ```bash
-$VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
-  counter.v \
-  $VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
-  -temp_dir ./results \
-  --route_chan_width 100 \
-  --sdc_file counter.sdc \
-  -ending_stage odin
+ $VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py counter.v   $VTR_ROOT/vtr_flow/arch/timing/EArch.xml   --route_chan_width 100   --sdc_file /home/navi/FPGA/vtr_designs/counter/counter.sdc   -temp_dir /home/navi/FPGA/vtr_designs/counter/results/stage1   -start parmys   -end parmys
+
 ```
 
 | Flag | Purpose |
@@ -29,30 +20,25 @@ $VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
 | `-temp_dir ./results` | Output directory for logs and intermediate files |
 | `--route_chan_width 100` | Fixed routing channel width |
 | `--sdc_file counter.sdc` | Timing constraints |
-| `-ending_stage odin` | Stop after ODIN II synthesis (produces `.odin.blif`) |
+| `-ending_stage parmys ` | Stop after parmys synthesis (produces `.parmys.blif`) |
 
 **Output:**
-<img width="2497" height="605" alt="image" src="https://github.com/user-attachments/assets/89edf571-14c8-4cbb-88cd-6697c817aa30" />
+<img width="550" height="49" alt="image" src="https://github.com/user-attachments/assets/12af6380-7a89-408b-8f4a-2e2ea38d4e4a" />
 
 ---
 
 ### Stage 2 — ABC (Logic Optimization → Mapped BLIF)
 
 ```bash
-$VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
-  ./results/counter.odin.blif \
-  $VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
-  -temp_dir ./results/abc \
-  --route_chan_width 100 \
-  -starting_stage abc \
-  -ending_stage abc
+$VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py results/stage1/counter.parmys.blif   $VTR_ROOT/vtr_flow/arch/timing/EArch.xml   --route_chan_width 100   --sdc_file /home/navi/FPGA/vtr_designs/counter/counter.sdc   -temp_dir /home/navi/FPGA/vtr_designs/counter/results/stage2   -start abc   -end abc
 ```
 
 
 
 
 **Output:**
-****<img width="2535" height="805" alt="image" src="https://github.com/user-attachments/assets/bd1d4786-0b45-4153-9c5e-996dec4c0806" />
+****<img width="480" height="74" alt="image" src="https://github.com/user-attachments/assets/d41128b4-e89d-4530-9b9c-794b56481514" />
+
 
 
 ### Stage 3 — VPR (Pack → Place → Route → STA)
