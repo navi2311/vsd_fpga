@@ -56,14 +56,14 @@ $VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py results/stage2/counter.parmys.abc.bli
 <img width="644" height="100" alt="image" src="https://github.com/user-attachments/assets/ca0e83be-e1e9-40f1-8d03-176f10533c0f" />
 
 # Critical path and Fmax
-cat results/vpr/report_timing.setup.rpt
+```cat results/vpr/report_timing.setup.rpt```
 
 # Utilization
-cat results/vpr/packing_pin_util.rpt
+```cat results/vpr/packing_pin_util.rpt```
 
 
 
-  ```
+  
 
 # power
 We have to ace the engine
@@ -76,6 +76,7 @@ $VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py counter.v \
   -power \
   -cmos_tech $VTR_ROOT/vtr_flow/tech/PTM_45nm/45nm.xml
 ```
+**output**
 <img width="644" height="211" alt="image" src="https://github.com/user-attachments/assets/2e5d9acc-da23-4d02-81df-2e96f8676663" />
 
 
