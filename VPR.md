@@ -4,13 +4,14 @@
 ### inputs
 - FPGA architecture file (.xml)
 - technology-mapped user-defined circuit
-## 
-Then it performs 
-- packing
-  
-- placement
-- routing
-- analysis
+## VPR STAGES
+| stage | input & output| 
+|------|---------|
+| `pack` | RTL source |
+| `place` | Target FPGA architecture |
+| `route` | Output directory for logs and intermediate files |
+| `analysis` | Fixed routing channel width |
+
 to map the circuit onto the FPGA
 ### commands to run
 > `vpr arch_file .blif_file` command to run vpr ---min two inputs required
