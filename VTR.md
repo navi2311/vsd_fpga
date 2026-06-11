@@ -23,7 +23,7 @@ VTR flow usage incremental using a counter example
 | `-ending_stage parmys ` | Stop after parmys synthesis (produces `.parmys.blif`) |
 
 **Output:**
-<img width="550" height="49" alt="image" src="https://github.com/user-attachments/assets/12af6380-7a89-408b-8f4a-2e2ea38d4e4a" />
+ <img width="550" height="49" alt="image" src="https://github.com/user-attachments/assets/12af6380-7a89-408b-8f4a-2e2ea38d4e4a" />
 
 ---
 
@@ -37,7 +37,7 @@ $VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py results/stage1/counter.parmys.blif   
 
 
 **Output:**
-****<img width="480" height="74" alt="image" src="https://github.com/user-attachments/assets/d41128b4-e89d-4530-9b9c-794b56481514" />
+  <img width="480" height="74" alt="image" src="https://github.com/user-attachments/assets/d41128b4-e89d-4530-9b9c-794b56481514" />
 
 
 
