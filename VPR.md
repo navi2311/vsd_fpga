@@ -8,9 +8,9 @@
 | stage | input | output | 
 |------|---------|----------|
 | `pack` | *.v | *.net |
-| `place` | *.net | *.place|
-| `route` | Output directory for logs and intermediate files |
-| `analysis` | Fixed routing channel width |
+| `place` | *.net | *.place |
+| `route` | *.place | *.route |
+
 
 to map the circuit onto the FPGA
 ### commands to run
