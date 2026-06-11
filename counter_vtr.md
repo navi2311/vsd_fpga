@@ -21,3 +21,6 @@ results
 ```
 grep -A 15 "Circuit Statistics" temp/vpr.out
 ```
+```
+ $VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py counter.v  $VTR_ROOT/vtr_flow/arch/timing/EArch.xml --route_chan_width 100 -sdc_file /home/navi/FPGA/vtr_designs/counter/counter.sdc -power -cmos_tech $VTR_ROOT/vtr_flow/tech/PTM_45nm/45nm.xml
+```
