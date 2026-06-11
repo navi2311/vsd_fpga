@@ -22,13 +22,14 @@ $VTR_ROOT/vpr/vpr \
     --route_chan_width 100
 ```
 - with gui
+```
 $VTR_ROOT/vpr/vpr \
     $VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
     $VTR_ROOT/vtr_flow/benchmarks/blif/tseng.blif \
     --route_chan_width 100 \
     --analysis --disp on
-
-  ``
+```
+  
 - timing analysis
   `'
 - post_implenmation
