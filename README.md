@@ -7,7 +7,8 @@ In this workshop we run two designs`(counter,riscv_core)` in following tools
   - integrate Vivado IP in custom logic
   - How to use ILA to view waveforms
 - openfpga(VTR--which has VPR framework)
-  > open source framework which can be used to generate fabric for a custom FPGA
+  > open source framework which can be used to generate fabric for a custom FPGA.
+  
   > It is a structured framework that enables the generation of a customizable FPGA fabric
   ## design flow
   ```
