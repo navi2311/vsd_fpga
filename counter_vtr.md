@@ -16,4 +16,8 @@ $VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
 
 ```
 results
+>Utilization
 
+```
+grep -A 15 "Circuit Statistics" temp/vpr.out
+```
