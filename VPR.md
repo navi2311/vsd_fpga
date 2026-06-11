@@ -11,7 +11,7 @@
 | `place` | *.net | *.place | --place |
 | `route` | *.place | *.route | -- route |
 
-> note: with VPR pass input and command option if we want to run incremental
+> note: with the VPR command, pass input and command option if we want to run incremental
 
 ### commands to run 
 > `vpr arch_file .blif_file` command to run vpr ---min two inputs required
