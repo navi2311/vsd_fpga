@@ -32,8 +32,10 @@ $VTR_ROOT/vpr/vpr \
   
 - timing analysis
 ```
---sdc "path to file"
+--sdc_file "path to file"
 ```
 - post_implenmation
-  ``
+  ```
+  --gen_post_synthesis_netlist on
+  ```
 
