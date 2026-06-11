@@ -31,7 +31,9 @@ $VTR_ROOT/vpr/vpr \
 ```
   
 - timing analysis
-  `'
+```
+--sdc "path to file"
+```
 - post_implenmation
   ``
 
