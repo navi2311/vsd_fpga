@@ -7,8 +7,8 @@
 ## VPR STAGES
 | stage | input | output | 
 |------|---------|----------|
-| `pack` | *.v|*.net|
-| `place` | Target FPGA architecture |
+| `pack` | *.v | *.net |
+| `place` | *.net | *.place|
 | `route` | Output directory for logs and intermediate files |
 | `analysis` | Fixed routing channel width |
 
