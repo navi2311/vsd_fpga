@@ -9,7 +9,7 @@ In this workshop we run two designs`(counter,riscv_core)` in following tools
 - openfpga(VTR--which has VPR framework)
   > open source framework which can be used to generate fabric for a custom FPGA
   > It is a structured framework that enables the generation of a customizable FPGA fabric
-  ## design floe
+  ## design flow
   ```
    1. Read the arch from XML files
    2. Link OpenFPGA architecture to VPR data
@@ -17,8 +17,9 @@ In this workshop we run two designs`(counter,riscv_core)` in following tools
    4. generate Verilog code or bit stream as required
    
   ```
-  - [How to run the VPR flow](VPR.md)
-  - [How to run VTR flow](VTR.md)
+  -  Open flow contains VTR, which uses VPR 
+    - [VPR flow](VPR.md)
+    - [VTR flow](VTR.md)
 - SOFA(which uses open fpga and maps the technology to sky130 pdk)
   - How to run SOFA flow
 
