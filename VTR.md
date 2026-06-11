@@ -1,5 +1,14 @@
 
 ## VTR Flow: 
+>command to run all stages
+```
+$VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
+  counter.v \
+  $VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
+  -temp_dir ./results \
+  --route_chan_width 100 \
+  --sdc_file counter.sdc \
+```
 VTR flow usage incremental using a counter example
 ### Stage 1 — ODIN II (RTL → BLIF)
 
