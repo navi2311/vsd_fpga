@@ -5,11 +5,11 @@
 - FPGA architecture file (.xml)
 - technology-mapped user-defined circuit
 ## VPR STAGES
-| stage | input | output | 
-|------|---------|----------|
-| `pack` | *.v | *.net |
-| `place` | *.net | *.place |
-| `route` | *.place | *.route |
+| stage | input | output | command |
+|------|---------|----------|----|
+| `pack` | *.v | *.net | --pack |
+| `place` | *.net | *.place | --place |
+| `route` | *.place | *.route | -- route |
 
 
 to map the circuit onto the FPGA
