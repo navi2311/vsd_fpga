@@ -76,10 +76,10 @@ cat results/vpr/packing_pin_util.rpt
 We have to ace the engine
 ```
 $VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
-    $VTR_ROOT/doc/src/quickstart/counter.v \
+    counter.v \
     $VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
     -power -cmos_tech  /home/kunalg123/Desktop/openFPGA/openfpga_flow/tech/PTM_45nm/45nm.xml  \
-    -temp_dir . \
+    ./results/vpr \
     --route_chan_width 100
 ```
 
