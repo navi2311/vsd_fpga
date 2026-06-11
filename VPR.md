@@ -11,9 +11,9 @@
 | `place` | *.net | *.place | --place |
 | `route` | *.place | *.route | -- route |
 
+> note: with VPR pass input and command option if we want to run incremental
 
-to map the circuit onto the FPGA
-### commands to run
+### commands to run 
 > `vpr arch_file .blif_file` command to run vpr ---min two inputs required
 
 - to run without a GUI
