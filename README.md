@@ -7,9 +7,9 @@ In this workshop we run two designs`(counter,riscv_core)` in following tools
   - integrate Vivado IP in custom logic
   - How to use ILA to view waveforms
 - openfpga(VTR--which has VPR framework)
-  - How to run the VPR flow
-  - How to run VTR flow
+  - [How to run the VPR flow](VPR.md)
+  - [How to run VTR flow](VTR.md)
 - SOFA(which uses open fpga and maps the technology to sky130 pdk)
   - How to run SOFA flow
 
-In these tools (Vivado, VTR, SOFA) analysed  the power, timing, utilization, and post-implementation netlist verification for both designs
+In these tools (Vivado, VTR, SOFA with open FPGA flow), we analysed  the power, timing, utilization, and post-implementation netlist verification for both designs
