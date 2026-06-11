@@ -15,8 +15,19 @@ to map circuit onto the fpga
 > `vpr arch_file .blif_file` command to run vpr ---min two inputs required
 
 - to run without gui
-``
-- to run with gui with increment 1
+```
+$VTR_ROOT/vpr/vpr \
+    $VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
+    $VTR_ROOT/vtr_flow/benchmarks/blif/tseng.blif \
+    --route_chan_width 100
+```
+- with gui
+$VTR_ROOT/vpr/vpr \
+    $VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
+    $VTR_ROOT/vtr_flow/benchmarks/blif/tseng.blif \
+    --route_chan_width 100 \
+    --analysis --disp on
+
   ``
 - timing analysis
   `'
