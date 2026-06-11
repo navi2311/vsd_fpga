@@ -19,12 +19,17 @@ In this workshop we run two designs`(counter,riscv_core)` in following tools
    
   ```
   -  Open flow contains VTR, which uses VPR 
-    - [VPR flow](VPR.md)
+    
     - [VTR flow](VTR.md)
+    - [VPR flow](VPR.md)
 - SOFA `SKYWATER OpenSource FPGAs`
   - It is a series of open-source eFPGA IP cores that use `OpenFPGA` flow and map to Skywater 130nm pdk
   - [SOFA using openFPGA](sofa.md)    
 
 In these tools (Vivado, VTR, SOFA with open FPGA flow), we analysed  the power, timing, utilization, and post-implementation netlist verification for both designs
+
+| Design | Vivado | VTR | SOFA (QLSOFA HD)|
+| -------- | -------- | -------- | --------|
+| counter | |[VTR_counter](counter_vtr.md) | |
 
 
