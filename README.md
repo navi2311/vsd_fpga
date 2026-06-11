@@ -28,8 +28,10 @@ In this workshop we run two designs`(counter,riscv_core)` in following tools
 
 In these tools (Vivado, VTR, SOFA with open FPGA flow), we analysed  the power, timing, utilization, and post-implementation netlist verification for both designs
 
-| Design | Vivado | VTR | SOFA (QLSOFA HD)|
-| -------- | -------- | -------- | --------|
-| counter | |[VTR_counter](counter_vtr.md) | |
-
+ [VTR_counter](counter_vtr.md) | 
+ [vtr_rvmyth](rvmyth_vtr.md)
+ [sofa_counter](sofs.md)
+ [vivado_counter](vivado_counter.md)
+ [vivado_rvmyth](vivado_rvmyth.md)
+ 
 
